@@ -17,7 +17,7 @@
 package com.netflix.spinnaker.echo.slack
 
 import com.fasterxml.jackson.databind.ObjectMapper
-import com.netflix.spinnaker.echo.api.Notification
+import com.netflix.spinnaker.echo.api.notifications.Notification
 import com.netflix.spinnaker.echo.notification.InteractiveNotificationService
 import com.netflix.spinnaker.echo.notification.NotificationTemplateEngine
 import com.netflix.spinnaker.kork.web.exceptions.InvalidRequestException

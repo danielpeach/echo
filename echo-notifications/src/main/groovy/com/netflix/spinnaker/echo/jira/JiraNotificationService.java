@@ -20,11 +20,11 @@ import static net.logstash.logback.argument.StructuredArguments.kv;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.collect.ImmutableMap;
-import com.netflix.spinnaker.echo.api.Notification;
-import com.netflix.spinnaker.echo.controller.EchoResponse;
+import com.netflix.spinnaker.echo.api.notifications.EchoResponse;
+import com.netflix.spinnaker.echo.api.notifications.Notification;
+import com.netflix.spinnaker.echo.api.notifications.NotificationService;
 import com.netflix.spinnaker.echo.jira.JiraService.CreateJiraIssueRequest;
 import com.netflix.spinnaker.echo.jira.JiraService.CreateJiraIssueResponse;
-import com.netflix.spinnaker.echo.notification.NotificationService;
 import com.netflix.spinnaker.kork.core.RetrySupport;
 import java.util.Map;
 import java.util.Optional;

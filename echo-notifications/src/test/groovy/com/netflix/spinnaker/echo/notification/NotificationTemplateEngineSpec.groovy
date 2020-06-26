@@ -16,7 +16,7 @@
 
 package com.netflix.spinnaker.echo.notification
 
-import com.netflix.spinnaker.echo.api.Notification
+import com.netflix.spinnaker.echo.api.notifications.Notification
 import freemarker.template.Configuration
 import freemarker.template.Template
 import freemarker.template.TemplateNotFoundException

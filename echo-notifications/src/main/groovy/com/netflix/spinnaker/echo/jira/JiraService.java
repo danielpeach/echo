@@ -16,7 +16,7 @@
 
 package com.netflix.spinnaker.echo.jira;
 
-import com.netflix.spinnaker.echo.controller.EchoResponse;
+import com.netflix.spinnaker.echo.api.notifications.EchoResponse;
 import java.util.HashMap;
 import java.util.Map;
 import retrofit.http.Body;

@@ -17,6 +17,7 @@
 package com.netflix.spinnaker.echo.plugins.test
 
 import com.netflix.spinnaker.echo.api.events.EventListener
+import com.netflix.spinnaker.echo.api.notifications.NotificationService
 import com.netflix.spinnaker.kork.plugins.tck.PluginsTck
 import com.netflix.spinnaker.kork.plugins.tck.serviceFixture
 import dev.minutest.rootContext
@@ -36,6 +37,15 @@ class EchoPluginsTest : PluginsTck<EchoPluginsFixture>() {
       test("Event listener extension is loaded into context") {
         val eventListeners = applicationContext.getBeansOfType<EventListener>(EventListener::class.java)
         val extensionBeanName = "com.netflix.echo.enabled.plugin.EventListenerExtension".replace(".", "")
+        val extension = eventListeners[extensionBeanName]
+        expect {
+          that(extension).isNotNull()
+        }
+      }
+
+      test("Notification service extension is loaded into context") {
+        val eventListeners = applicationContext.getBeansOfType(NotificationService::class.java)
+        val extensionBeanName = "com.netflix.echo.enabled.plugin.NotificationServiceExtension".replace(".", "")
         val extension = eventListeners[extensionBeanName]
         expect {
           that(extension).isNotNull()

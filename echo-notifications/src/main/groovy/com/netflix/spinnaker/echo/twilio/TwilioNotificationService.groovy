@@ -16,9 +16,9 @@
 
 package com.netflix.spinnaker.echo.twilio
 
-import com.netflix.spinnaker.echo.controller.EchoResponse
-import com.netflix.spinnaker.echo.notification.NotificationService
-import com.netflix.spinnaker.echo.api.Notification
+import com.netflix.spinnaker.echo.api.notifications.EchoResponse
+import com.netflix.spinnaker.echo.api.notifications.NotificationService
+import com.netflix.spinnaker.echo.api.notifications.Notification
 import com.netflix.spinnaker.echo.notification.NotificationTemplateEngine
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Value

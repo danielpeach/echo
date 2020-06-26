@@ -17,9 +17,9 @@
 
 package com.netflix.spinnaker.echo.slack
 
-import com.netflix.spinnaker.echo.api.Notification
-import com.netflix.spinnaker.echo.api.Notification.ButtonAction
-import com.netflix.spinnaker.echo.api.Notification.InteractiveActions
+import com.netflix.spinnaker.echo.api.notifications.Notification
+import com.netflix.spinnaker.echo.api.notifications.Notification.ButtonAction
+import com.netflix.spinnaker.echo.api.notifications.Notification.InteractiveActions
 import groovy.transform.Canonical
 
 import java.util.stream.Collectors

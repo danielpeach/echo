@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.netflix.spinnaker.echo.controller;
+package com.netflix.spinnaker.echo.api.notifications;
 
 public class EchoResponse<T extends EchoResponse.EchoResult> {
   private T value;

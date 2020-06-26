@@ -16,10 +16,11 @@
 
 package com.netflix.spinnaker.echo.controller
 
-import com.netflix.spinnaker.echo.api.Notification
+import com.netflix.spinnaker.echo.api.notifications.EchoResponse
+import com.netflix.spinnaker.echo.api.notifications.Notification
 import com.netflix.spinnaker.echo.notification.InteractiveNotificationCallbackHandler
 import com.netflix.spinnaker.echo.notification.InteractiveNotificationService
-import com.netflix.spinnaker.echo.notification.NotificationService
+import com.netflix.spinnaker.echo.api.notifications.NotificationService
 import groovy.util.logging.Slf4j
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.MediaType

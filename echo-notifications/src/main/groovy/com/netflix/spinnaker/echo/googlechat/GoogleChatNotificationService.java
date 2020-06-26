@@ -16,9 +16,9 @@
 
 package com.netflix.spinnaker.echo.googlechat;
 
-import com.netflix.spinnaker.echo.api.Notification;
-import com.netflix.spinnaker.echo.controller.EchoResponse;
-import com.netflix.spinnaker.echo.notification.NotificationService;
+import com.netflix.spinnaker.echo.api.notifications.EchoResponse;
+import com.netflix.spinnaker.echo.api.notifications.Notification;
+import com.netflix.spinnaker.echo.api.notifications.NotificationService;
 import com.netflix.spinnaker.echo.notification.NotificationTemplateEngine;
 import java.util.Collection;
 import org.springframework.beans.factory.annotation.Autowired;

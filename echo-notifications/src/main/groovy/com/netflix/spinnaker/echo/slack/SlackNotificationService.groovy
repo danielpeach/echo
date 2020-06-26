@@ -16,10 +16,10 @@
 
 package com.netflix.spinnaker.echo.slack
 
-import com.netflix.spinnaker.echo.api.Notification
-import com.netflix.spinnaker.echo.api.Notification.InteractiveActions
-import com.netflix.spinnaker.echo.controller.EchoResponse
-import com.netflix.spinnaker.echo.notification.NotificationService
+import com.netflix.spinnaker.echo.api.notifications.Notification
+import com.netflix.spinnaker.echo.api.notifications.Notification.InteractiveActions
+import com.netflix.spinnaker.echo.api.notifications.EchoResponse
+import com.netflix.spinnaker.echo.api.notifications.NotificationService
 import com.netflix.spinnaker.echo.notification.NotificationTemplateEngine
 import groovy.util.logging.Slf4j
 import org.springframework.beans.factory.annotation.Qualifier

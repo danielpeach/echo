@@ -17,14 +17,14 @@
 package com.netflix.spinnaker.echo.pubsub.google;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.netflix.spinnaker.echo.api.Notification;
 import com.netflix.spinnaker.echo.api.events.Event;
+import com.netflix.spinnaker.echo.api.notifications.EchoResponse;
+import com.netflix.spinnaker.echo.api.notifications.EchoResponse.Void;
+import com.netflix.spinnaker.echo.api.notifications.Notification;
+import com.netflix.spinnaker.echo.api.notifications.NotificationService;
 import com.netflix.spinnaker.echo.config.GooglePubsubProperties.Content;
-import com.netflix.spinnaker.echo.controller.EchoResponse;
-import com.netflix.spinnaker.echo.controller.EchoResponse.Void;
 import com.netflix.spinnaker.echo.model.pubsub.PubsubSystem;
 import com.netflix.spinnaker.echo.notification.AbstractEventNotificationAgent;
-import com.netflix.spinnaker.echo.notification.NotificationService;
 import com.netflix.spinnaker.echo.pubsub.PubsubPublishers;
 import java.util.HashMap;
 import java.util.Map;

@@ -17,7 +17,7 @@
 package com.netflix.spinnaker.echo.notification
 
 import com.google.common.annotations.VisibleForTesting
-import com.netflix.spinnaker.echo.api.Notification
+import com.netflix.spinnaker.echo.api.notifications.Notification
 import freemarker.template.Configuration
 import freemarker.template.Template
 import groovy.transform.PackageScope

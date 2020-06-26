@@ -1,6 +1,6 @@
 package com.netflix.spinnaker.echo.slack
 
-import com.netflix.spinnaker.echo.api.Notification
+import com.netflix.spinnaker.echo.api.notifications.Notification
 import com.netflix.spinnaker.echo.config.SlackAppProperties
 import com.netflix.spinnaker.echo.config.SlackConfig
 import com.netflix.spinnaker.echo.config.SlackLegacyProperties

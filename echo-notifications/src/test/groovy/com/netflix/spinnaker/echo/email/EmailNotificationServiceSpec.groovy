@@ -20,7 +20,7 @@ package com.netflix.spinnaker.echo.email
 import com.icegreen.greenmail.util.GreenMail
 import com.icegreen.greenmail.util.GreenMailUtil
 import com.icegreen.greenmail.util.ServerSetupTest
-import com.netflix.spinnaker.echo.api.Notification
+import com.netflix.spinnaker.echo.api.notifications.Notification
 import com.netflix.spinnaker.echo.notification.NotificationTemplateEngine
 import org.springframework.mail.javamail.JavaMailSenderImpl
 import spock.lang.Shared

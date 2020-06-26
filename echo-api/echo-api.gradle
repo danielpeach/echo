@@ -13,6 +13,7 @@ dependencies {
 
   api "com.netflix.spinnaker.kork:kork-plugins-api"
 
+  compileOnly "com.fasterxml.jackson.core:jackson-annotations"
   compileOnly("org.projectlombok:lombok")
   annotationProcessor("org.projectlombok:lombok")
 
@@ -20,6 +21,7 @@ dependencies {
   testImplementation("dev.minutest:minutest")
   testImplementation("io.mockk:mockk")
   testImplementation("org.springframework.boot:spring-boot-starter-test")
+  testImplementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 }
 
 test {

@@ -18,9 +18,9 @@
 package com.netflix.spinnaker.echo.pagerduty
 
 import com.fasterxml.jackson.databind.ObjectMapper
-import com.netflix.spinnaker.echo.api.Notification
-import com.netflix.spinnaker.echo.controller.EchoResponse
-import com.netflix.spinnaker.echo.notification.NotificationService
+import com.netflix.spinnaker.echo.api.notifications.Notification
+import com.netflix.spinnaker.echo.api.notifications.EchoResponse
+import com.netflix.spinnaker.echo.api.notifications.NotificationService
 import com.netflix.spinnaker.echo.services.Front50Service
 import groovy.transform.InheritConstructors
 import groovy.util.logging.Slf4j
