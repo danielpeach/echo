@@ -18,6 +18,7 @@ package com.netflix.spinnaker.echo.api.events;
 
 import com.netflix.spinnaker.kork.annotations.Alpha;
 import com.netflix.spinnaker.kork.plugins.api.internal.SpinnakerExtensionPoint;
+import java.util.List;
 import java.util.Map;
 
 /** A NotificationAgent handles user-configured pipeline notifications. */
@@ -41,4 +42,6 @@ public interface NotificationAgent extends SpinnakerExtensionPoint {
       Event event,
       Map<String, String> config,
       String status);
+
+  List<NotificationParameter> getParameters();
 }
