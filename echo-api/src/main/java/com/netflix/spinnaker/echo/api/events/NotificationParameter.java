@@ -20,18 +20,24 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
 
+/** Definition of a notification parameter that a user can configure. */
 @Data
 @NoArgsConstructor
 public class NotificationParameter {
 
+  /** Name of the parameter */
   @NonNull private String name;
 
+  /** Label to use in Spinnaker's UI. */
   @NonNull private String label;
 
+  /** Default value if not specified by the user. */
   private String defaultValue;
 
+  /** Description to show in Spinnaker's UI. */
   private String description;
 
+  /** Data Type of the parameter. */
   private ParameterType type = ParameterType.string;
 
   public enum ParameterType {

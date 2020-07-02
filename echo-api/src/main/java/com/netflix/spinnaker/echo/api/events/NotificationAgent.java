@@ -43,5 +43,9 @@ public interface NotificationAgent extends SpinnakerExtensionPoint {
       Map<String, String> config,
       String status);
 
+  /**
+   * Notification parameter definitions. Users set these values via Spinnaker's UI; the parameters
+   * will be passed through {@link NotificationAgent#sendNotifications} as key-value pairs.
+   */
   List<NotificationParameter> getParameters();
 }
